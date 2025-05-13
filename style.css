@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+    text-align: center;
+    /* padding-top: 3rem;  */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/images\ \(26\).jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+/* .container{
+    width: 300px;
+    height: 500px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+} */
+.balloon-container{
+    position: relative;
+    bottom: -800px;
+    padding-bottom: 1rem;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    /* padding-top: 2rem; */
+}
+.balloon::before{
+    content: "";
+    font-size: 20px;
+    color: hsl(215,50%,50%);
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -12px;
+    z-index: -100;
+}
+.balloon{
+display: inline-block;
+width: 78px;
+height: 88px;
+/* text-align: center; */
+border-radius: 80%;
+position: relative;
+box-shadow: inset -10px -10px 0 rgba(0,0,0,0.07);
+transition: transform 0.5s ease-in-out;
+z-index: 100;
+transform-origin: bottom center;
+color: white;
+font-weight: bold;
+}
+/* .second-items{
+    width: 50%;
+} */
+.balloon1{
+    animation: balloons1 forwards;
+    font-size: 58px;
+}
+.balloon2{
+    animation: balloons2 forwards;
+    font-size: 48px;
+    top: -94px;
+}
+.balloon3{
+    animation: balloons3 forwards;
+    font-size: 58px;
+    bottom: 187px;
+}
+
+@keyframes balloons1{
+    0%{ transform: translateY(10vh) rotate3d(1,1,1,90deg);opacity: 1;}
+    10%{transform: translateY(-60vh) rotate3d(1,1,1,180deg);opacity: 1;}
+    100%{transform:translateY(-800px) rotate3d(1,1,1,360deg);opacity: 1;}
+}
+@keyframes balloons2{
+    0%{ transform: translateY(10vh) rotate(360deg); opacity: 1;}
+    10%{transform: translateY(-10vh) rotate(180deg); opacity: 1;}
+    100%{transform:translateY(-700px) rotate(0deg); opacity: 1;}
+}
+@keyframes balloons3{
+    0%{ transform: translateY(10vh) rotate(1,1,1,90deg);opacity: 1;}
+    10%{transform: translateY(-10vh) rotate(180deg);opacity: 1;}
+    100%{transform:translateY(-600px) rotate(0deg);opacity: 1;}
+}
+
+.balloon1:nth-child(1){
+    background: rgba(255,100,100);
+    animation-duration: 3.0s;
+    left: 53px;
+}
+.balloon1:nth-child(1)::before{
+    color: rgba(255,100,100);
+}
+
+.balloon1:nth-child(2){
+    background: rgba(255,225,100);
+    animation-duration: 4.1s;
+    left: 51px;
+}
+.balloon1:nth-child(2)::before{
+    color: rgba(255,225,100);
+}
+
+.balloon1:nth-child(3){
+    background: rgba(255,100,100);
+    animation-duration: 3.0s;
+    left: 52px;
+}
+.balloon1:nth-child(3)::before{
+    color: rgba(255,100,100);
+}
+
+.balloon1:nth-child(4){
+    background: rgba(0,255,255);
+    animation-duration: 6.3s;
+    left: 49px;
+}
+.balloon1:nth-child(4)::before{
+    color: rgba(0,255,255);
+}
+.balloon1:nth-child(5){
+    background: rgba(0,0,255);
+    animation-duration: 4.4s;
+    left: 46px;
+}
+.balloon1:nth-child(5)::before{
+    color: rgba(0,0,255);
+}
+
+.balloon2:nth-child(1){
+    background: rgba(255,100,100);
+    animation-duration: 3.0s;
+    left: 61px;
+}
+.balloon2:nth-child(1)::before{
+    color: rgba(255,100,100);
+}
+.balloon2:nth-child(2){
+    background: rgba(255,255,100);
+    animation-duration: 3.1s;
+    left: 59px;
+}
+.balloon2:nth-child(2)::before{
+    color: rgba(255,255,100);
+}
+
+.balloon2:nth-child(3){
+    background: rgba(255,255,255);
+    animation-duration: 5.2s;
+    left: 59px;
+    color: #000;
+}
+.balloon2:nth-child(3)::before{
+    color: rgba(255,255,255);
+}
+
+.balloon2:nth-child(4){
+    background: rgba(0,255,100);
+    animation-duration: 6.3s;
+    left: 59px;
+}
+.balloon2:nth-child(4)::before{
+    color: rgba(0,255,100);
+}
+.balloon2:nth-child(5){
+    background: rgba(0,0,255);
+    animation-duration: 4.4s;
+    left: 59px;
+}
+.balloon2:nth-child(5)::before{
+    color: rgba(0,0,255);
+}
+.balloon2:nth-child(6){
+    background: rgba(255,255,100);
+    animation-duration: 5.2s;
+    left: 59px;
+}
+.balloon2:nth-child(6)::before{
+    color: rgba(255,255,100);
+}
+.balloon2:nth-child(7){
+    background: rgba(255,100,100);
+    animation-duration: 6.1s;
+    left: 59px;
+}
+.balloon2:nth-child(7)::before{
+    color: rgba(255,100,100);
+}
+.balloon2:nth-child(8){
+    background: rgba(0,255,100);
+    animation-duration: 7.2s;
+    left: 59px;
+}
+.balloon2:nth-child(8)::before{
+    color: rgba(0,255,100);
+}
+
+.balloon3:nth-child(1){
+    background: rgba(255,100,100);
+    animation-duration: 8.1s;
+    left: 49px;
+}
+.balloon3:nth-child(1)::before{
+    color: rgba(255,100,100);
+}
+.balloon3:nth-child(2){
+    background: rgba(255,255,100);
+    animation-duration: 3.1s;
+    left: 49px;
+}
+.balloon3:nth-child(2)::before{
+    color: rgba(255,255,100);
+}
+.balloon3:nth-child(3){
+    background: rgba(255,255,255);
+    animation-duration: 5.2s;
+    left: 49px;
+    color: #000;
+}
+.balloon3:nth-child(3)::before{
+    color: rgba(255,255,255);
+}
+.balloon3:nth-child(4){
+    background: rgba(0,255,100);
+    animation-duration: 6.3s;
+    left: 49px;
+}
+.balloon3:nth-child(4)::before{
+    color: rgba(0,255,100);
+}
+.balloon3:nth-child(5){
+    background: rgba(0,0,255);
+    animation-duration: 8.1s;
+    left: 49px;
+}
+.balloon3:nth-child(5)::before{
+    color: rgba(0,0,255);
+}
+.balloon3:nth-child(6){
+    background: rgba(255,100,100);
+    animation-duration: 8.1s;
+    left: 49px;
+}
+.balloon3:nth-child(6)::before{
+    color: rgba(255,100,100);
+}
+.balloon3:nth-child(7){
+    background: rgba(255,255,100);
+    animation-duration: 8.1s;
+    left: 49px;
+}
+.balloon3:nth-child(7)::before{
+    color: rgba(255,255,100);
+} 
+
+.balloon:hover{
+    display: none; 
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 768px){
+    body{
+        /* margin: auto 0; */
+        align-items: start; 
+        justify-content: start;
+        text-align: center;
+        padding: 0 .6rem;
+        /* height: 80vh; */
+    }
+    .container{
+        margin: auto 0;
+    }
+    .balloon{
+        display: inline-block;
+        width: 33px;
+        height: 28px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    /* .balloon1:nth-child(1){
+        background: rgba(255,100,100);
+        animation-duration: 3.0s;
+        left: 0;
+    } */
+    .balloon2:nth-child(n+1){
+        background: rgba(255,100,100);
+        animation-duration: 3.0s;
+        left: 0;
+        text-align: center;
+        /* margin-right: 1rem; */
+    }
+    .second-items{
+        padding-left: 1rem;
+    }
+    .balloon1:nth-child(n+1){
+        margin-right: 10px;
+    }
+    .balloon3:nth-child(n+1){
+        margin-right: 5px;
+    }
+}
